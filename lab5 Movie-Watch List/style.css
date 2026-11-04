@@ -1,0 +1,234 @@
+/* Simple styling — all application behavior is in React. */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f7f7fa;
+    color: #1b2232;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 48px auto;
+}
+
+.page-header {
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #7b8293;
+}
+
+h1 {
+    margin: 12px 0;
+    font-size: 34px;
+}
+
+.page-header p {
+    color: #657086;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.panel,
+.movie-card,
+.empty-state {
+    background: white;
+    border: 1px solid #e3e5ed;
+    border-radius: 12px;
+}
+
+.panel {
+    padding: 26px;
+    box-shadow: 0 3px 12px rgba(27, 34, 50, 0.04);
+}
+
+h2 {
+    margin: 0 0 22px;
+    font-size: 20px;
+}
+
+label {
+    display: block;
+    margin: 18px 0 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #d8dce5;
+    border-radius: 7px;
+    font: inherit;
+    font-size: 14px;
+    color: #1b2232;
+    background: #fff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #657ad6;
+    box-shadow: 0 0 0 3px rgba(101, 122, 214, 0.12);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    cursor: pointer;
+    font: inherit;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.add-button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 12px;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    background: #343d78;
+    font-weight: bold;
+}
+
+.add-button:hover {
+    background: #252d61;
+}
+
+.watchlist-section {
+    margin-top: 32px;
+}
+
+.list-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.list-heading h2 {
+    margin: 0;
+}
+
+.count {
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: #e9ebf8;
+    color: #343d78;
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.empty-state {
+    padding: 34px 16px;
+    text-align: center;
+    color: #657086;
+}
+
+.empty-icon {
+    font-size: 34px;
+}
+
+.empty-state p {
+    margin: 10px 0 5px;
+    color: #1b2232;
+    font-weight: bold;
+}
+
+.empty-state span {
+    font-size: 13px;
+}
+
+.movie-list {
+    display: grid;
+    gap: 12px;
+}
+
+.movie-card {
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    box-shadow: 0 2px 8px rgba(27, 34, 50, 0.025);
+}
+
+.movie-info {
+    min-width: 0;
+}
+
+.movie-info h3 {
+    margin: 0 0 8px;
+    font-size: 17px;
+    overflow-wrap: anywhere;
+}
+
+.stars {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.movie-info p {
+    margin: 10px 0 0;
+    color: #657086;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.remove-button {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    border: 1px solid #f0d0d4;
+    border-radius: 7px;
+    background: #fff7f7;
+    color: #bd3542;
+    font-size: 13px;
+}
+
+.remove-button:hover {
+    background: #ffe8e8;
+    border-color: #e8b8bf;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 92%;
+        margin: 28px auto;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .panel {
+        padding: 20px 17px;
+    }
+
+    .movie-card {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .remove-button {
+        padding: 7px 9px;
+    }
+}
